@@ -1,1 +1,1 @@
-fun cube(x: Double) : Double = x * x * x
+Float cube(Float x) => x * x * x;

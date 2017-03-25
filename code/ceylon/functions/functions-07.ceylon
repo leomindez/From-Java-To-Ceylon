@@ -1,5 +1,7 @@
-fun main(args: Array&ltString&gt) {
-  openFile("file.txt", readOnly = true)
+shared void run(){
+	openFile(filename = "file.txt";
+	readOnly = false;
+	);
 }
 
-fun openFile(filename: String, readOnly: Boolean) : File { }
+File openFile(String filename, Boolean readOnly){ }

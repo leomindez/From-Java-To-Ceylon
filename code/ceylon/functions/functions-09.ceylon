@@ -1,6 +1,6 @@
-fun init() {
-  val module = createList&ltString&gt("net")
-  val moduleInferred = createList("net")
+shared void run() {
+  value module = createList&ltString&gt("net");
+  value moduleInferred = createList("net");
 }
 
-fun &ltT&gt createList(item: T): List&ltT&gt { }
+Array&ltType&gt createList&ltType&gt(Type item){ }

@@ -1,14 +1,11 @@
-fun main(args: Array&ltString&gt) {
-  createFile("file.txt")
+shared void run() {
+  createFile("file.txt");
 
-  createFile("file.txt", true)
-  createFile("file.txt", appendDate = true)
+  createFile("file.txt", true);
 
-  createFile("file.txt", true, false)
-  createFile("file.txt", appendDate = true, executable = true)
+  createFile("file.txt", true, false);
 
-  createFile("file.txt", executable = true)
 }
 
-fun createFile(filename: String, appendDate: Boolean = false,
-               executable: Boolean = false): File { }
+File createFile(String filename, Boolean appendDate = false,
+               Boolean executable = false){ }

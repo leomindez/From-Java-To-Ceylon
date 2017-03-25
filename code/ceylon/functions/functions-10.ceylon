@@ -1,14 +1,10 @@
-fun main(args: Array&ltString&gt) {
-    val book = createBook();
-    // or
-    val (title, author) = createBook();
+shared void run () {
+    value book = createBook();
 
-    println(book)
-    println("Title: $title")
+    print(book);
+    print("Title: ``book.title``");
 }
 
-fun createBook() : Book{
-    return Book("title_01", "author_01")
-}
+Book createBook() => Book{ title = "title_01"; author = "author_01";};
 
-data class Book(val title : String, val author : String)
+shared class Book(shared String title, shared String author){}

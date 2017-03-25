@@ -1,3 +1,3 @@
-fun hello() {
-    println("Hello, World!");
+void hello() {
+    print("Hello, World!");
 }

@@ -1,3 +1,3 @@
-fun hello(name: String = "World") {
-    println("Hello, $name!")
+void hello(String name = "World") {
+    print("Hello, ``name``");
 }
