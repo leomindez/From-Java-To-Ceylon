@@ -1,1 +1,1 @@
-open class User
+shared class User(){}

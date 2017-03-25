@@ -1,9 +1,9 @@
-abstract class Document {
-    abstract fun calculateSize(): Int
+abstract class Document() {
+    shared formal Integer calculateSize();
 }
 
-class Photo : Document() {
-    override fun calculateSize(): Int {
-
+class Photo() extends Document() {
+    shared actual Integer calculateSize(){
+        return 0;
     }
 }

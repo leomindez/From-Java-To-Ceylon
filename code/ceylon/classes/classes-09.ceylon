@@ -1,6 +1,8 @@
-fun ByteArray.toHex() : String {
-
+object utils {
+    shared String toHexString(Array&ltByte&gt data){
+        
+    }
 }
 
-val dummyData = byteArrayOf();
-val hexValue = dummyData.toHex()
+value dummyData = Array&ltByte&gt(10);
+utils.toHexString(dummyData);

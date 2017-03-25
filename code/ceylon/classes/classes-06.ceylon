@@ -1,6 +1,3 @@
-class Document{
-    var id : String = "00x"
-        set(value) {
-            if(value.isNotEmpty())  field = value
-        }
+class Document(id){
+	variable shared String id;
 }

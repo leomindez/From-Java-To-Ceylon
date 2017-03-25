@@ -1,1 +1,1 @@
-val file = File("file.txt")
+value file = File {filename = "file.txt";};

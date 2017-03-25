@@ -1,5 +1,5 @@
-class Document {
+class Document() {
 
-    class InnerClass
+    class InnerClass(){}
 
 }

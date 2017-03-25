@@ -1,3 +1,3 @@
-object Document {
+object document {
 
 }

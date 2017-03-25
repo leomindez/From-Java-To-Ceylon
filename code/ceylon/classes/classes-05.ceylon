@@ -1,1 +1,1 @@
-class User(var name: String, var lastName: String = "")
+class User(String name, String lastName = ""){}

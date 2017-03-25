@@ -1,1 +1,1 @@
-class User(val name: String)
+class User(String name){}

@@ -1,9 +1,12 @@
 interface Printable{
-    fun print()
+    shared formal void print();
+    shared default void method(){
+    	print();
+    }
 }
 
-class Document : Printable{
-    override fun print() {
-
+class Document() satisfies Printable{
+    shared actual void print(){
+    	print("Implemented method");
     }
 }
