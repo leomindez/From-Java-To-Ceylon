@@ -2,8 +2,10 @@
 System.out.println("Hello, World!");
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>print("Hello, World!");</code></pre></div></div></div><div class="case"><div class="name">Variables I</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>final int x;
 final int y = 1;
-</code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>variable Integer x;
-variable value y = 1;
+
+</code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>Integer x;
+value y = 1;
+
 </code></pre></div></div></div><div class="case"><div class="name">Variables II</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>int w;
 int z = 2;
 z = 3;
@@ -214,3 +216,4 @@ users.sort(Comparator.comparing(user -> user.lastname));
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>value users = getUsers();
 users.sort(byDecreasing((User user) => user.lastname));
 </code></pre></div></div></div></div></body></html>
+
