@@ -17,19 +17,19 @@ w = 1;
 </code></pre></div></div></div><div class="case"><div class="name">Null I</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>final String name = null;
 
 String lastName;
-lastName = null
+lastName = null;
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>String? name = null;
 
 variable String? lastName;
-lastName = null
+lastName = null;
 
 String firstName;
-firstName = null // Compilation error!!
+firstName = null; // Compilation error!!
 </code></pre></div></div></div><div class="case"><div class="name">Null II</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>if(text != null){
   int length = text.length();
 }
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>value length = text?.length;
-value length = text.length // NullPointerException if text == null
+value length = text.length; // NullPointerException if text == null
 </code></pre></div></div></div><div class="case"><div class="name">Strings I</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>String name = "John";
 String lastName = "Smith";
 String text = "My name is: " + name + " " + lastName;
