@@ -187,15 +187,7 @@ for (int number : numbers) {
 
   groups.get("odd").add(number);
 }
-</code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>value groups = numbers.group((Integer number) => {
-		if (number.divided(1) == 0){
-			"even" 
-		}else{
-			"odd"
-		}
-});
-   
-  
+</code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>value groups = numbers.group((number) => number.even then "even" else "odd");
 </code></pre></div></div></div><div class="case"><div class="name">Collections</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>final List&ltInteger&gt evens = new ArrayList<>();
 final List&ltInteger&gt odds = new ArrayList<>();
 for (int number : numbers){
@@ -206,7 +198,7 @@ for (int number : numbers){
   }
 }
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>//partition funtion is part of collection module
-value result = partition(numbers, (Integer number) => number.divided(2) == 0);
+value result = partition(numbers, (Integer number) => number.even);
 </code></pre></div></div></div><div class="case"><div class="name">Collections</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>final List&ltUser&gt users = getUsers();
 
 Collections.sort(users, new Comparator&ltUser&gt(){
