@@ -40,7 +40,7 @@ String otherText = "My name is: " + name.substring(2);
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>value name = "John";
 value lastName = "Smith";
 value text = "My name is: ``name`` ``lastName``";
-value otherText = "My name is: ``name.substring(0,2)``":
+value otherText = "My name is: ``name[2...]``":
 </code></pre></div></div></div><div class="case"><div class="name">Strings II</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>String text = "First Line\n" +
               "Second Line\n" +
               "Third Line";
@@ -73,7 +73,7 @@ if((1..10).contains(x)){}</code></pre></div></div></div><div class="case"><div c
   final String result = ((String) a).substring(1);
 }
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>if (is String a) {
-  value result = a.substring(0,1);
+  value result = a[1...];
 }
 </code></pre></div></div></div><div class="case"><div class="name">Switch / When</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>final int x = // value;
 final String xResult;
