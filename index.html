@@ -2,10 +2,8 @@
 System.out.println("Hello, World!");
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>print("Hello, World!");</code></pre></div></div></div><div class="case"><div class="name">Variables I</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>final int x;
 final int y = 1;
-
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>Integer x;
 value y = 1;
-
 </code></pre></div></div></div><div class="case"><div class="name">Variables II</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>int w;
 int z = 2;
 z = 3;
@@ -29,7 +27,6 @@ firstName = null; // Compilation error!!
   int length = text.length();
 }
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>value length = text?.length;
-value length = text.length; // NullPointerException if text == null
 </code></pre></div></div></div><div class="case"><div class="name">Strings I</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>String name = "John";
 String lastName = "Smith";
 String text = "My name is: " + name + " " + lastName;
@@ -41,7 +38,7 @@ value otherText = "My name is: ``name.substring(0,2)``":
 </code></pre></div></div></div><div class="case"><div class="name">Strings II</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>String text = "First Line\n" +
               "Second Line\n" +
               "Third Line";
-</code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>
+</code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>value text = "First Line
               Second Line
               Third Line";
 </code></pre></div></div></div><div class="case"><div class="name">Ternary Operator</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>String text = x > 5 ? "x > 5" : "x <= 5";
@@ -217,4 +214,3 @@ users.sort(Comparator.comparing(user -> user.lastname));
 </code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>value users = getUsers();
 users.sort(byDecreasing((User user) => user.lastname));
 </code></pre></div></div></div></div></body></html>
-
