@@ -26,7 +26,13 @@ firstName = null; // Compilation error!!
 </code></pre></div></div></div><div class="case"><div class="name">Null II</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>if(text != null){
   int length = text.length();
 }
-</code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>value length = text?.length;
+
+int length = text != null ? text.length() : 0;
+</code></pre></div><div class="card"><div class="lang">Ceylon</div><pre class="code"><code>if (exists text) {
+    value length = text.length;
+}
+
+value length = text?.length else 0;
 </code></pre></div></div></div><div class="case"><div class="name">Strings I</div><div class="pair"><div class="card"><div class="lang">Java</div><pre class="code"><code>String name = "John";
 String lastName = "Smith";
 String text = "My name is: " + name + " " + lastName;
