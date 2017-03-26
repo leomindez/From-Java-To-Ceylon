@@ -1,6 +1,6 @@
-if (is Int x) { }
+if (is Integer x) { }
 
-assert(text = other)
-text.substring(0,1);
+assert (is String text = other);
 
-if((1..10).contains(x)){}
+if (0 <= x <= 10) {}
+if (x in 0..10) {}
